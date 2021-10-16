@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RavenDB.Client
+namespace RavenDB
 {
     class Program
     {

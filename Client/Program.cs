@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Discord.Client
+namespace Client
 {
     class Program
     {

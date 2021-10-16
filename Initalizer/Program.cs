@@ -5,7 +5,7 @@ using Client;
 using System;
 using System.Threading.Tasks;
 
-namespace Bridge
+namespace Initalizer
 {
     class Program
     {
