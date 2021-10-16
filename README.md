@@ -1,21 +1,22 @@
-## Project: Constant
-## Purpose: Bundle all projects into one file for distribution
+# Constant - The Discord Bot
+Constant is a new Discord Bot written in C# (.NET Version 5.x) and will be used for many different things.
+This Package is written and Maintained by [Drageast](https://github.com/Drageast) only, but new contributors are welcome.
 ---
 ## Dependencies (using NuGet):
 
-**Initalizer:**
+**[Initalizer:](Initalizer/README.md)**
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Json
 - Microsoft.Extensions.Configuration.EnvoirmentVariables
 
-**Client:**
+**[Client:](Client/README.md)**
 - DSharpPlus
 - DSharpPlus.CommandsNext
 - DSharpPlus.Interactivity
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Binder
 
-**RavenDB:**
+**[RavenDB:](RavenDB/README.md)**
 - RavenDB.Client
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Binder
