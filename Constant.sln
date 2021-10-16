@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{3C16DBD4-4463-41F4-95A6-CBBD470298C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RavenDB", "RavenDB\RavenDB.csproj", "{CFE9F07C-0C5A-4ADA-931F-68B1CABC7692}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Initalizer", "Initalizer\Initalizer.csproj", "{B99169F3-0086-48DA-9D59-77A8B005F2ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C16DBD4-4463-41F4-95A6-CBBD470298C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C16DBD4-4463-41F4-95A6-CBBD470298C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C16DBD4-4463-41F4-95A6-CBBD470298C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C16DBD4-4463-41F4-95A6-CBBD470298C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE9F07C-0C5A-4ADA-931F-68B1CABC7692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE9F07C-0C5A-4ADA-931F-68B1CABC7692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE9F07C-0C5A-4ADA-931F-68B1CABC7692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE9F07C-0C5A-4ADA-931F-68B1CABC7692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99169F3-0086-48DA-9D59-77A8B005F2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99169F3-0086-48DA-9D59-77A8B005F2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99169F3-0086-48DA-9D59-77A8B005F2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99169F3-0086-48DA-9D59-77A8B005F2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {793EB5E6-A0E6-4265-BA9E-31D75D860CC9}
+	EndGlobalSection
+EndGlobal
