@@ -4,19 +4,19 @@ This Package is written and Maintained by [Drageast](https://github.com/Drageast
 ---
 ## Dependencies (using NuGet):
 
-**[Initalizer:](Initalizer/README.md)**
+**[Initalizer:](Initalizer/)**
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Json
 - Microsoft.Extensions.Configuration.EnvoirmentVariables
 
-**[Client:](Client/README.md)**
+**[Client:](Client/)**
 - DSharpPlus
 - DSharpPlus.CommandsNext
 - DSharpPlus.Interactivity
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Binder
 
-**[RavenDB:](RavenDB/README.md)**
+**[RavenDB:](RavenDB/)**
 - RavenDB.Client
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Binder
