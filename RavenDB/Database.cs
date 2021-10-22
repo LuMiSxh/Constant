@@ -13,7 +13,7 @@ namespace RavenDB
         public Database(IConfiguration config)
         {
             // Say how to close the Application -- Setting the functions for it (Functions derive from base class)
-            Console.WriteLine("[WARNING] :: Befor closing the application, press CRTL+C to save Cached data!");
+            Console.WriteLine("[WARNING] :: Before closing the application, press CRTL+C to save Cached data!");
             Console.CancelKeyPress += Exit;
             AppDomain.CurrentDomain.ProcessExit += Exit;
 
@@ -27,6 +27,8 @@ namespace RavenDB
 
             // Setting the DocumentSession
             base.DocSession = DocStore.OpenAsyncSession();
+
+            // Initalizing the JsonHandler for Models
         }
 
         public async Task<object> GetItem<T>(object Id)
@@ -43,12 +45,12 @@ namespace RavenDB
             return Data;
         }
 
-        public void UpdateItem(IEntity Object)
+        public void UpdateItem(IDBEntity Object)
         {
             Cache.Update(Object);
         }
 
-        public void DeleteItem(IEntity Object)
+        public void DeleteItem(IDBEntity Object)
         {
             try
             {
@@ -77,7 +79,7 @@ namespace RavenDB
             try
             {
                 ExitAsync().GetAwaiter().GetResult();
-                Console.WriteLine("Data has been saved");
+                Console.WriteLine("Data has been saved, it's now safe to exit the application.");
             }
             catch { }
         }

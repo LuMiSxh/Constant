@@ -8,6 +8,8 @@ using DSharpPlus.SlashCommands;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Client
@@ -52,7 +54,7 @@ namespace Client
 
             client.UseInteractivity(SettingsInter);
 
-            // Registering modules for slash- and CommandsNext
+            // Registering Modules for Slash- and CommandsNext
 
             // Base functions 
 

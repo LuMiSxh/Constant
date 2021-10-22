@@ -23,7 +23,7 @@ namespace RavenDB
             throw new ObjectNotFoundException();
         }
 
-        public void Update(IEntity Object)
+        public void Update(IDBEntity Object)
         {
             Cache[Object.Id] = Object;
         }

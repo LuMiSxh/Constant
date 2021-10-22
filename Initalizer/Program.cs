@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RavenDB;
+using RavenDB.Models;
 using System;
 using System.Threading.Tasks;
 
@@ -24,9 +25,13 @@ namespace Initalizer
             // Creating a Database instance and adding it to the IServiceProvider
             Database DB = new(Config);
 
+            // Creating the ModelHandler
+            ModelHandler MH = new(Config);
+
             // Dependency injection 
             IServiceProvider Services = new ServiceCollection()
                 .AddSingleton(DB)
+                .AddSingleton(MH)
                 .BuildServiceProvider();
 
             // Creating the DiscordClient 
