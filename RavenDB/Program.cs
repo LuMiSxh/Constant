@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RavenDB
+﻿namespace RavenDB
 {
     class Program
     {

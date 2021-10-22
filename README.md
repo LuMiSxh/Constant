@@ -10,9 +10,10 @@ This Package is written and Maintained by [Drageast](https://github.com/Drageast
 - Microsoft.Extensions.Configuration.EnvoirmentVariables
 
 **[Client:](Client/)**
-- DSharpPlus
-- DSharpPlus.CommandsNext
-- DSharpPlus.Interactivity
+- DSharpPlus ([SlimGet - Nigthly build](https://dsharpplus.github.io/articles/misc/nightly_builds.html))
+- DSharpPlus.CommandsNext ([SlimGet - Nigthly build](https://dsharpplus.github.io/articles/misc/nightly_builds.html))
+- DSharpPlus.Interactivity ([SlimGet - Nigthly build](https://dsharpplus.github.io/articles/misc/nightly_builds.html))
+- DsharpLus.SlashCommands ([SlimGet - Nigthly build](https://dsharpplus.github.io/articles/misc/nightly_builds.html))
 - Microsoft.Extensions.Configuration
 - Microsoft.Extensions.Configuration.Binder
 

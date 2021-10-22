@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RavenDB.Models
+﻿namespace RavenDB.Models
 {
-    public interface Entity
+    public interface IEntity
     {
         public string Id { get; set; }
+        public double Version { get; set; }
     }
 }

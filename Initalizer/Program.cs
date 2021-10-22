@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Client;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RavenDB;
-using Client;
 using System;
 using System.Threading.Tasks;
 
@@ -10,6 +10,11 @@ namespace Initalizer
     class Program
     {
         static void Main(string[] args)
+        {
+            MainAsync().GetAwaiter().GetResult();
+        }
+
+        private static async Task MainAsync()
         {
             // Creating Configuration and checking for appsettings.json
             IConfiguration Config = new ConfigurationBuilder()
@@ -26,8 +31,7 @@ namespace Initalizer
 
             // Creating the DiscordClient 
             DiscordClientHandler Dclient = new DiscordClientHandler(Config, Services);
-
-            Dclient.RunAsync().GetAwaiter().GetResult();
+            await Dclient.RunAsync();
         }
     }
 }

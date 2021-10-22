@@ -4,6 +4,7 @@ using DSharpPlus.Entities;
 using DSharpPlus.EventArgs;
 using DSharpPlus.Interactivity;
 using DSharpPlus.Interactivity.Extensions;
+using DSharpPlus.SlashCommands;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -47,14 +48,13 @@ namespace Client
             // Initiaalizing CommandsNext and Interactivity Modules
             var commands = client.UseCommandsNext(SettingsNext);
 
-            // var slash = Client.UseSlashCommands();
+            var slash = client.UseSlashCommands();
 
             client.UseInteractivity(SettingsInter);
 
             // Base functions 
 
             client.Ready += OnReady;
-
         }
 
         // Starting the client
@@ -62,8 +62,8 @@ namespace Client
         {
             await client.ConnectAsync();
             await Task.Delay(-1);
-        }
 
+        }
 
         // OnReady
         private async Task OnReady(DiscordClient sender, ReadyEventArgs e)
@@ -74,6 +74,5 @@ namespace Client
 
             await client.UpdateStatusAsync(new DiscordActivity("Settings.Status", ActivityType.Watching));
         }
-
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Client
+﻿namespace Client
 {
     class Program
     {
