@@ -13,7 +13,7 @@ namespace RavenDB
         public Database(IConfiguration config)
         {
             // Say how to close the Application -- Setting the functions for it (Functions derive from base class)
-            Console.WriteLine("[WARNING] :: Befor closing the application, press ctrl+c to save Cached data!");
+            Console.WriteLine("[WARNING] :: Befor closing the application, press CRTL+C to save Cached data!");
             Console.CancelKeyPress += Exit;
             AppDomain.CurrentDomain.ProcessExit += Exit;
 

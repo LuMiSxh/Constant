@@ -22,11 +22,11 @@ namespace Initalizer
             .Build();
 
             // Creating a Database instance and adding it to the IServiceProvider
-            Database db = new Database(Config);
+            Database DB = new(Config);
 
             // Dependency injection 
             IServiceProvider Services = new ServiceCollection()
-                .AddSingleton(db)
+                .AddSingleton(DB)
                 .BuildServiceProvider();
 
             // Creating the DiscordClient 

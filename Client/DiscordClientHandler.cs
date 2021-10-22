@@ -42,7 +42,7 @@ namespace Client
             // InteractivtyConfiguration declaration
             SettingsInter = new InteractivityConfiguration
             {
-                Timeout = TimeSpan.FromMinutes(5),
+                Timeout = TimeSpan.FromMinutes(3.5),
             };
 
             // Initiaalizing CommandsNext and Interactivity Modules
@@ -51,6 +51,8 @@ namespace Client
             var slash = client.UseSlashCommands();
 
             client.UseInteractivity(SettingsInter);
+
+            // Registering modules for slash- and CommandsNext
 
             // Base functions 
 
